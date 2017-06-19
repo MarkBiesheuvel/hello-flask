@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    html = "<h3>Hello Flask (Version 2.0)!</h3>" \
+    html = "<h3>Hello Flask (Version 2.1)!</h3>" \
            "<b>Hostname:</b> {hostname}<br/>"
     return html.format(hostname=socket.gethostname())
 
