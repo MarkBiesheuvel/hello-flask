@@ -23,8 +23,8 @@ def hello():
             WaitTimeSeconds=20
         )
         message_id = response['Messages'][0]['MessageId'] if len(response['Messages']) > 0 else None
-    except:
-        message_id = None
+    except Exception as e:
+        message_id = str(e)
 
     return template.format(hostname=socket.gethostname(), queue_url=queue_url, message_id=message_id)
 
