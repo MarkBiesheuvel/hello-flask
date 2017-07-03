@@ -7,7 +7,7 @@ queue_url = os.getenv("SQS_LOGGING_QUEUE_URL")
 
 app = Flask(__name__)
 
-template = "<h3>Hello Flask (Version 2.2)!</h3>" \
+template = "<h3>Hello Flask (Version 2.3)!</h3>" \
        "<b>Hostname:</b> {hostname}<br/>" \
        "<b>Queue Url:</b> {queue_url}<br>" \
        "<b>Message ID:</b> {message_id}<br>"
